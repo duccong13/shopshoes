@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: novatech
+  datasource:
+    url: jdbc:mysql://localhost:3306/shopshoes
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+frontend:
+  url: http://localhost:5173
+
+server:
+  port: 6789
+
+jwt:
+  signerKey: "ZQx9jdCwmkSQSrOmwz9mspRjlOZyHZqGmnHgnegvjFn7S1dHu6W11uIFsCHo/m74"
+
+

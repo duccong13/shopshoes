@@ -1,0 +1,13 @@
+.dropdown li:hover ul{
+    display: grid;
+    gap: 1rem;
+}
+
+
+.dropdown li ul li:hover li{
+    display: grid;
+}
+
+.dropdown li ul, .dropdown li ul .drop-third{
+    display: none;
+}
