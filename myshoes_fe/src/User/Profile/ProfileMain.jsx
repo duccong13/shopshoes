@@ -17,10 +17,7 @@ const ProfileMain = () => {
       mt={10}
       spacing={2}
       sx={{
-        backgroundImage: `url(${background})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "100vh",
+        backgroundColor:"#fff"
       }}
     >
       <Grid item xs={4}>

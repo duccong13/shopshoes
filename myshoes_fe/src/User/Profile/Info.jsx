@@ -84,7 +84,7 @@ export const Info = () => {
       <div className="w-full min-h-screen md:w-2/3 lg:w-3/4">
         <div className="">
           <div className="w-full px-6 sm:max-w-xl sm:rounded-lg">
-            <Typography variant="h4" className="font-bold sm:text-xl text-white">
+            <Typography variant="h4" className="font-bold sm:text-xl text-black">
             👽 Thông tin cá nhân
             </Typography>
 
@@ -110,14 +110,14 @@ export const Info = () => {
                     variant="outlined"
                     component="label"
                     onClick={() => fileInputRef.current.click()}
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#000" }}
                   >
                     Sửa
                   </Button>
                 </div>
               </div>
 
-              <div className="items-center mt-8 sm:mt-14 text-[#fff]">
+              <div className="items-center mt-8 sm:mt-14 text-[#000]">
                 <div className="relative mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-6">
                   <TextField
                     label={"Họ Đệm"}
@@ -131,26 +131,26 @@ export const Info = () => {
                     name="lastName"
                     onChange={handleChange}
                     InputProps={{
-                      style: { color: 'white' },  // Thay đổi màu của đoạn text
+                      style: { color: 'black' },  // Thay đổi màu của đoạn text
                     }}
                     InputLabelProps={{
-                      style: { color: 'white' },  // Thay đổi màu của label
+                      style: { color: 'black' },  // Thay đổi màu của label
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                       '& .MuiInput-input': {
-                        color: 'white',  // Thay đổi màu của giá trị mặc định và đoạn text
+                        color: 'black',  // Thay đổi màu của giá trị mặc định và đoạn text
                       },
                       '& .MuiInputLabel-root': {
-                        color: 'white',  // Thay đổi màu của label
+                        color: 'black',  // Thay đổi màu của label
                       },
                       '& .Mui-disabled': {
                         color: 'red',  // Đổi màu của đoạn text khi bị vô hiệu hóa
@@ -183,26 +183,26 @@ export const Info = () => {
                     name="firstName"
                     onChange={handleChange}
                     InputProps={{
-                      style: { color: 'white' },  // Thay đổi màu của đoạn text
+                      style: { color: 'black' },  // Thay đổi màu của đoạn text
                     }}
                     InputLabelProps={{
-                      style: { color: 'white' },  // Thay đổi màu của label
+                      style: { color: 'black' },  // Thay đổi màu của label
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                       '& .MuiInput-input': {
-                        color: 'white',  // Thay đổi màu của giá trị mặc định và đoạn text
+                        color: 'black',  // Thay đổi màu của giá trị mặc định và đoạn text
                       },
                       '& .MuiInputLabel-root': {
-                        color: 'white',  // Thay đổi màu của label
+                        color: 'black',  // Thay đổi màu của label
                       },
                       '& .Mui-disabled': {
                         color: 'red',  // Đổi màu của đoạn text khi bị vô hiệu hóa
@@ -236,30 +236,30 @@ export const Info = () => {
                     name="dob"
                     onChange={handleChange}
                     InputProps={{
-                      style: { color: 'white' },  // Thay đổi màu của đoạn text
+                      style: { color: 'black' },  // Thay đổi màu của đoạn text
                     }}
                     InputLabelProps={{
-                      style: { color: 'white' },  // Thay đổi màu của label
+                      style: { color: 'black' },  // Thay đổi màu của label
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                       '& .MuiInput-input': {
-                        color: 'white',  // Thay đổi màu của giá trị mặc định và đoạn text
+                        color: 'black',  // Thay đổi màu của giá trị mặc định và đoạn text
                       },
                       '& .Mui-disabled': {
                         color: 'red',  // Đổi màu của đoạn text khi bị vô hiệu hóa
                         WebkitTextFillColor: 'red',  // Đổi màu của giá trị mặc định khi bị vô hiệu hóa (trình duyệt Webkit)
                       },
                       '& .MuiInputLabel-root': {
-                        color: 'white',  // Thay đổi màu của label
+                        color: 'black',  // Thay đổi màu của label
                       },
                     }}
                   />
@@ -289,26 +289,26 @@ export const Info = () => {
                     variant="standard"
                     onChange={handleChange}
                     InputProps={{
-                      style: { color: 'white' },  // Thay đổi màu của đoạn text
+                      style: { color: 'black' },  // Thay đổi màu của đoạn text
                     }}
                     InputLabelProps={{
-                      style: { color: 'white' },  // Thay đổi màu của label
+                      style: { color: 'black' },  // Thay đổi màu của label
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                       '& .MuiInput-input': {
-                        color: 'white',  // Thay đổi màu của giá trị mặc định và đoạn text
+                        color: 'black',  // Thay đổi màu của giá trị mặc định và đoạn text
                       },
                       '& .MuiInputLabel-root': {
-                        color: 'white',  // Thay đổi màu của label
+                        color: 'black',  // Thay đổi màu của label
                       },
                       '& .Mui-disabled': {
                         color: 'red',  // Đổi màu của đoạn text khi bị vô hiệu hóa
@@ -347,13 +347,13 @@ export const Info = () => {
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                     }}
                   />
@@ -374,13 +374,13 @@ export const Info = () => {
                     }}
                     sx={{
                       '& .MuiInput-underline:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân trước khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân trước khi focus
                       },
                       '& .MuiInput-underline:hover:before': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân khi hover
+                        borderBottomColor: 'black',  // Đổi màu gạch chân khi hover
                       },
                       '& .MuiInput-underline:after': {
-                        borderBottomColor: 'white',  // Đổi màu gạch chân sau khi focus
+                        borderBottomColor: 'black',  // Đổi màu gạch chân sau khi focus
                       },
                     }}
                   />

@@ -27,8 +27,8 @@ export function SignIn() {
     }));
   };
 
-  console.log("Auth", auth)
-  console.log("Data", data)
+  // console.log("Auth", auth)
+  // console.log("Data", data)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -134,7 +134,7 @@ export function SignIn() {
           </Button>
         </form>
         <form className="mt-8 mb-2 mx-auto w-80 max-w-screen-lg lg:w-1/2">
-          <div className="space-y-4 mt-8">
+          {/* <div className="space-y-4 mt-8">
             <Button
               size="lg"
               color="white"
@@ -194,7 +194,7 @@ export function SignIn() {
               />
               <span>Đăng Nhập bằng GitHub</span>
             </Button>
-          </div>
+          </div> */}
           <Typography
             variant="paragraph"
             className="text-center text-blue-gray-500 font-medium mt-4"
@@ -211,7 +211,7 @@ export function SignIn() {
       </div>
       <div className="w-2/5 h-full hidden lg:block">
         <img
-          src="https://demos.creative-tim.com/material-tailwind-kit-react/img/pattern.png"
+          src="https://i.pinimg.com/originals/3c/69/e7/3c69e706aea08704d2623fb4f1b6fa74.jpg"
           className="h-full w-full object-cover rounded-3xl"
         />
       </div>

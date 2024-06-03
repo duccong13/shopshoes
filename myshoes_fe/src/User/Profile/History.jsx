@@ -21,9 +21,9 @@ const History = () => {
 
   return (
     <div>
-      <Typography variant="h6" sx={{padding:2, marginLeft: 4, color:"white", fontWeight:700}}>Lịch sử giao hàng</Typography>
+      <Typography variant="h6" sx={{padding:2, marginLeft: 4, color:"black", fontWeight:700}}>Lịch sử giao hàng</Typography>
       <Grid container>
-        <Grid item xs={12} container sx={{ bgcolor: "#fff", height:"100px" }} mx={5}>
+        <Grid item xs={12} container sx={{ bgcolor: "#FFFDB5", height:"100px" }} mx={5}>
           <Grid item xs={6}>
             <div className="m-5 border-r-2 border-r-black text-center text-black">
               <Typography variant="h5">{uorder.orders && uorder.orders.result && uorder.orders.result.length}</Typography>

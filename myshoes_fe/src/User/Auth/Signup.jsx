@@ -39,7 +39,7 @@ export function SignUp() {
     <section className="m-8 flex">
       <div className="w-2/5 h-full hidden lg:block">
         <img
-          src="https://demos.creative-tim.com/material-tailwind-kit-react/img/pattern.png"
+          src="https://i.pinimg.com/originals/3c/69/e7/3c69e706aea08704d2623fb4f1b6fa74.jpg"
           className="h-full w-full object-cover rounded-3xl"
         />
       </div>
@@ -118,7 +118,7 @@ export function SignUp() {
             Đăng Ký
           </Button>
 
-          <div className="space-y-4 mt-8">
+          {/* <div className="space-y-4 mt-8">
             <Button
               size="lg"
               color="white"
@@ -177,7 +177,7 @@ export function SignUp() {
               />
               <span>Đăng nhập với GitHub</span>
             </Button>
-          </div>
+          </div> */}
           <Typography
             variant="paragraph"
             className="text-center text-blue-gray-500 font-medium mt-4"

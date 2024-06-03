@@ -6,7 +6,7 @@ import { MainCaroselData } from "./MainCaroselData";
 const MainCarosel = () => {
   const items = MainCaroselData.map((item) => (
     <img
-      className="cursor-pointer w-full"
+      className="cursor-pointer w-full h-full"
       role="presentation"
       src={item.link}
       alt=""

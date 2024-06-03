@@ -1,11 +1,20 @@
 import { Button, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import HomeCard from "./HomeCard";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllProducts } from "../../State/Admin/Product/Action";
 
 const HomeSectionCarosel = () => {
+  const {aproduct} = useSelector(store => store);
+  const dispatch = useDispatch();
+  console.log("Data", aproduct)
+  
+  useEffect(() => {
+    dispatch(getAllProducts());
+  }, [])
   const [activeIndex, setActiveIndex] = useState(0);
   const responsive = {
     0: { items: 1 },
@@ -15,9 +24,9 @@ const HomeSectionCarosel = () => {
   const slidePrev = () => setActiveIndex(activeIndex - 1);
   const slideNext = () => setActiveIndex(activeIndex + 1);
   const syncActiveIndex = ({ item }) => setActiveIndex(item);
-  const items = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  const items = aproduct.products && aproduct.products.data && aproduct.products.data.result
     .slice(activeIndex, activeIndex + 10)
-    .map((item, index) => <HomeCard key={index} />);
+    .map((item, index) => <HomeCard key={index} item={item} />);
 
   return (
     <div>
@@ -33,7 +42,7 @@ const HomeSectionCarosel = () => {
           onSlideChanged={syncActiveIndex}
           activeIndex={activeIndex}
         />
-        {activeIndex !== items.length - 5 && (
+        {items && activeIndex !== items.length - 5 && (
           <Button
             onClick={slideNext}
             variant="contained"
